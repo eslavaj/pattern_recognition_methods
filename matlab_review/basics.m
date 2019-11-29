@@ -48,6 +48,15 @@ det(A) %determinant of A
 inv(A) %inverse A
 
 X = B/A %Solve the equation X*A = B, calculate B*inv(A)
+det(B)  %Determinant of B (it's 0)
+D = inv(B)
+V = diag(A)
+diag(V)
+B=reshape(A,3,3)
+A=rand(4,4)  %uniformally distributed 
+A=randn(4,4)  %normal distributed 
+
+
 
 
 
