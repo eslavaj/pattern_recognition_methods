@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head><title>SOM Toolbox</title></head>
+<body bgcolor=#f0f0f0>
+<table border=0 width="100%" cellpadding=0 cellspacing=0><tr>
+<td valign=baseline><font size=+2>SOM Toolbox</font></td>
+<td valign=baseline align=right><a href="../../helpdesk.html" target="_top">Help Desk</a></td>
+</tr></table>
+<hr>
+<p><center>[ <a href="#byfunc">Grouped by function</a> | <a href="#bysort">Alphabetical order</a> ]</center>
+<p><b>NOTE:</b> Some of the files have no helpdisk help file.
+For them, the only available documentation is in the function file itself.
+Try command <tt>'help &lt;function_name&gt;'</tt> in Matlab prompt.
+
+<a name="byfunc"><H2> Grouped by function </H2></a>
+<DL>
+<P><DT><B>Demos</B></DT><P>
+<DD><TT>som_demo1</TT>:  SOM Toolbox demo 1: basic properties
+<DD><TT>som_demo2</TT>:  SOM Toolbox demo 2: basic usage
+<DD><TT>som_demo3</TT>:  SOM Toolbox demo 3: visualization
+<DD><TT>som_demo4</TT>:  SOM Toolbox demo 4: data analysis
+<P><DT><B>Creation of structs</B></DT><P>
+<DD><TT><a href="som_set.html">som_set</a></TT>:  create & set (& check) values to structs
+<DD><TT><a href="som_info.html">som_info</a></TT>:  print out information on a given struct  
+<DD><TT><a href="som_data_struct.html">som_data_struct</a></TT>:  create & initialize a data struct 
+<DD><TT><a href="som_map_struct.html">som_map_struct</a></TT>:  create & initialize a map struct 
+<DD><TT><a href="som_topol_struct.html">som_topol_struct</a></TT>:  create & initialize a topology struct 
+<DD><TT><a href="som_train_struct.html">som_train_struct</a></TT>:  create & initialize a train struct 
+<P><DT><B>Struct conversion and file I/O</B></DT><P>
+<DD><TT><a href="som_vs1to2.html">som_vs1to2</a></TT>:  converts a version 1.0 struct to version 2.0 struct
+<DD><TT><a href="som_vs2to1.html">som_vs2to1</a></TT>:  converts a version 2.0 struct to version 1.0 struct
+<DD><TT><a href="som_read_data.html">som_read_data</a></TT>:  reads a (SOM_PAK format) ASCII data file
+<DD><TT><a href="som_write_data.html">som_write_data</a></TT>:  writes a SOM_PAK format codebook file
+<DD><TT><a href="som_write_cod.html">som_write_cod</a></TT>:  writes a SOM_PAK format data file
+<DD><TT><a href="som_read_cod.html">som_read_cod</a></TT>:  reads a SOM_PAK format codebook file
+<P><DT><B>Data preprocessing</B></DT><P>
+<DD><TT><a href="som_normalize.html">som_normalize</a></TT>:  normalize data set
+<DD><TT><a href="som_denormalize.html">som_denormalize</a></TT>:  denormalize data set 
+<DD><TT><a href="som_norm_variable.html">som_norm_variable</a></TT>:  (de)normalize one variable
+<DD><TT><a href="preprocess.html">preprocess</a></TT>:  preprocessing GUI
+<P><DT><B>Initialization and training functions</B></DT><P>
+<DD><TT><a href="som_make.html">som_make</a></TT>:  create, initialize and train a SOM
+<DD><TT><a href="som_randinit.html">som_randinit</a></TT>:  random initialization algorithm
+<DD><TT><a href="som_lininit.html">som_lininit</a></TT>:  linear initialization algorithm
+<DD><TT><a href="som_seqtrain.html">som_seqtrain</a></TT>:  sequential training algorithm
+<DD><TT><a href="som_batchtrain.html">som_batchtrain</a></TT>:  batch training algorithm
+<DD><TT><a href="som_gui.html">som_gui</a></TT>:  SOM initialization and training GUI
+<DD><TT>som_prototrain</TT>:  a simple version of sequential training: easy to modify
+<P><DT><B>Clustering algorithms</B></DT><P>
+<DD><TT>som_kmeans</TT>:  k-means algorithm
+<DD><TT>kmeans_clusters</TT>:  try and evaluate several k-means clusterings
+<DD><TT>neural_gas</TT>:  neural gas vector quantization algorithm
+<P><DT><B>Supervised/classification algorithms</B></DT><P>
+<DD><TT><a href="som_supervised.html">som_supervised</a></TT>:  supervised SOM algorithm
+<DD><TT><a href="lvq1.html">lvq1</a></TT>:  LVQ1 algorithm
+<DD><TT><a href="lvq3.html">lvq3</a></TT>:  LVQ3 algorithm
+<DD><TT>knn</TT>:  k-NN classification algorithm
+<P><DT><B>SOM error measures</B></DT><P>
+<DD><TT><a href="som_quality.html">som_quality</a></TT>:  quantization and topographic error of SOM
+<DD><TT>som_distortion</TT>:  SOM distortion measure
+<P><DT><B>Auxiliary functions</B></DT><P>
+<DD><TT><a href="som_bmus.html">som_bmus</a></TT>:  calculates BMUs for given data vectors
+<DD><TT>som_divide</TT>:  extract subsets of data based on map
+<DD><TT><a href="som_label.html">som_label</a></TT>:  give labels to map units
+<DD><TT><a href="som_autolabel.html">som_autolabel</a></TT>:  automatically labels the SOM based on given data
+<DD><TT><a href="som_unit_coords.html">som_unit_coords</a></TT>:  calculates coordinates in output space for map units
+<DD><TT><a href="som_unit_dists.html">som_unit_dists</a></TT>:  distances in output space between map units
+<DD><TT><a href="som_unit_neighs.html">som_unit_neighs</a></TT>:  units in 1-neighborhood for each map unit
+<DD><TT><a href="som_neighborhood.html">som_neighborhood</a></TT>:  calculates neighborhood matrix for the given map
+<DD><TT>som_select</TT>:  GUI for manual selection of map units
+<DD><TT>som_estimate_gmm</TT>:  create Gaussian mixture model on top of SOM
+<DD><TT>som_probability_gmm</TT>:  evaluate Gaussian mixture model
+<DD><TT>som_ind2sub</TT>:  from linear index to subscript index 
+<DD><TT>som_sub2ind</TT>:  from subscript index to linear index
+<DD><TT>nanstats</TT>:  mean, std and median which ignore NaNs
+<P><DT><B>Using SOM_PAK from Matlab</B></DT><P>
+<DD><TT><a href="som_sompaktrain.html">som_sompaktrain</a></TT>:  uses SOM_PAK to train a map
+<DD><TT>sompak_gui</TT>:  GUI for using SOM_PAK from Matlab
+<DD><TT>sompak_init</TT>:  call SOM_PAK's initialization programs from Matlab
+<DD><TT>sompak_init_gui</TT>:  GUI for using SOM_PAK's initialization from Matlab
+<DD><TT>sompak_rb_control</TT>:  an auxiliary function for sompak_*_gui functions.
+<DD><TT>sompak_sammon</TT>:  call SOM_PAK's Sammon program from Matlab
+<DD><TT>sompak_sammon_gui</TT>:  GUI for using SOM_PAK's Sammon program from Matlab
+<DD><TT>sompak_train</TT>:  call SOM_PAK's training program from Matlab
+<DD><TT>sompak_train_gui</TT>:  GUI for using SOM_PAK's training program from Matlab 
+<P><DT><B>Visualization</B></DT><P>
+<DD><TT><a href="som_show.html">som_show</a></TT>:  basic visualization
+<DD><TT><a href="som_show_add.html">som_show_add</a></TT>:  add labels, hits and trajectories
+<DD><TT><a href="som_show_clear.html">som_show_clear</a></TT>:  remove extra markers
+<DD><TT><a href="som_recolorbar.html">som_recolorbar</a></TT>:  refresh/reconfigure colorbars
+<DD><TT><a href="som_grid.html">som_grid</a></TT>:  visualization of SOM network
+<DD><TT><a href="som_cplane.html">som_cplane</a></TT>:  component planes and U-matrices
+<DD><TT><a href="som_barplane.html">som_barplane</a></TT>:  bar chart visualization of map
+<DD><TT><a href="som_pieplane.html">som_pieplane</a></TT>:  pie chart visualization of map
+<DD><TT><a href="som_plotplane.html">som_plotplane</a></TT>:  plot chart visualization of map
+<DD><TT>som_trajectory</TT>:  launches a GUI for presenting comet-trajectories 
+<P><DT><B>Auxiliary functions for visualization</B></DT><P>
+<DD><TT><a href="som_hits.html">som_hits</a></TT>:  calculates the response of data on the map
+<DD><TT><a href="som_umat.html">som_umat</a></TT>:  calculates the U-matrix
+<DD><TT>cca</TT>:  curvilinear component analysis projection algorithm
+<DD><TT>pcaproj</TT>:  principal component projection algorithm
+<DD><TT>sammon</TT>:  Sammon's mapping projection algorithm
+<DD><TT><a href="som_connection.html">som_connection</a></TT>:  connection matrix for map 
+<DD><TT><a href="som_vis_coords.html">som_vis_coords</a></TT>:  map unit coordinates used in visualizations
+<DD><TT>som_colorcode</TT>:  create color coding for map/2D data
+<DD><TT>som_bmucolor</TT>:  colors of the BMUs from a given map color code
+<DD><TT>som_normcolor</TT>:  simulate indexed colormap
+<DD><TT>som_clustercolor</TT>:  color coding which depends on clustering structure
+<DD><TT>som_kmeanscolor</TT>:  color coding according to k-means clustering
+<P><DT><B>Low level routines used by visualization functions</B></DT><P>
+<DD><TT><a href="vis_patch.html">vis_patch</a></TT>:  defines hexagonal and rectangular patches
+<DD><TT>vis_som_show_data</TT>:  returns UserData and subplot handles stored by som_show.m
+<DD><TT>vis_valuetype</TT>:  used for type checks 
+<DD><TT>vis_footnote</TT>:  adds a movable text to the current figure 
+<DD><TT>vis_trajgui</TT>:  the actual GUI started by som_trajectory.m 
+<DD><TT>vis_PlaneAxisProperties</TT>:  set axis properties in visualization functions
+<DD><TT>vis_footnoteButtonDownFcn</TT>:  callback function for vis_footnote.m
+<DD><TT>vis_planeGetArgs</TT>:  converts topol struct to lattice, msize argument pair
+<P><DT><B>Other</B></DT><P>
+<DD><TT>somtoolbox</TT>:  this file
+<DD><TT>iris.data</TT>:  IRIS data set (used in demos)
+<DD><TT>License.txt</TT>:  GNU General Public License 
+<DD><TT>Copyright.txt</TT>:  Copyright notice
+<DD><TT>Contents</TT>: Overview of SOM Toolbox functions
+</DL>
+<p><hr><p>
+<a name="bysort"><H2> Alphabetical order </H2></a>
+<TABLE NOBORDER>
+<TR><TD>Contents <TD>Overview of SOM Toolbox functions
+<TR><TD>Copyright.txt <TD> Copyright notice
+<TR><TD>License.txt <TD> GNU General Public License 
+<TR><TD>cca <TD> curvilinear component analysis projection algorithm
+<TR><TD>iris.data <TD> IRIS data set (used in demos)
+<TR><TD>kmeans <TD> k-means algorithm
+<TR><TD>kmeans_clusters <TD> try and evaluate several k-means clusterings
+<TR><TD>knn <TD> k-NN classification algorithm
+<TR><TD><a href="lvq1.html">lvq1</a> <TD> LVQ1 algorithm
+<TR><TD><a href="lvq3.html">lvq3</a> <TD> LVQ3 algorithm
+<TR><TD>nanstats <TD> mean, std and median which ignore NaNs
+<TR><TD>neural_gas <TD> neural gas vector quantization algorithm
+<TR><TD>pcaproj <TD> principal component projection algorithm
+<TR><TD><a href="preprocess.html">preprocess</a> <TD> preprocessing GUI
+<TR><TD>sammon <TD> Sammon's mapping projection algorithm
+<TR><TD><a href="som_autolabel.html">som_autolabel</a> <TD> automatically labels the SOM based on given data
+<TR><TD><a href="som_barplane.html">som_barplane</a> <TD> bar chart visualization of map
+<TR><TD><a href="som_batchtrain.html">som_batchtrain</a> <TD> batch training algorithm
+<TR><TD>som_bmucolor <TD> colors of the BMUs from a given map color code
+<TR><TD><a href="som_bmus.html">som_bmus</a> <TD> calculates BMUs for given data vectors
+<TR><TD>som_clustercolor <TD> color coding which depends on clustering structure
+<TR><TD>som_colorcode <TD> create color coding for map/2D data
+<TR><TD><a href="som_connection.html">som_connection</a> <TD> connection matrix for map 
+<TR><TD><a href="som_cplane.html">som_cplane</a> <TD> component planes and U-matrices
+<TR><TD><a href="som_data_struct.html">som_data_struct</a> <TD> create & initialize a data struct 
+<TR><TD>som_demo1 <TD> SOM Toolbox demo 1: basic properties
+<TR><TD>som_demo2 <TD> SOM Toolbox demo 2: basic usage
+<TR><TD>som_demo3 <TD> SOM Toolbox demo 3: visualization
+<TR><TD>som_demo4 <TD> SOM Toolbox demo 4: data analysis
+<TR><TD><a href="som_denormalize.html">som_denormalize</a> <TD> denormalize data set 
+<TR><TD>som_distortion <TD> SOM distortion measure
+<TR><TD>som_divide <TD> extract subsets of data based on map
+<TR><TD>som_estimate_gmm <TD> create Gaussian mixture model on top of SOM
+<TR><TD><a href="som_grid.html">som_grid</a> <TD> visualization of SOM network
+<TR><TD><a href="som_gui.html">som_gui</a> <TD> SOM initialization and training GUI
+<TR><TD><a href="som_hits.html">som_hits</a> <TD> calculates the response of data on the map
+<TR><TD>som_ind2sub <TD> from linear index to subscript index 
+<TR><TD><a href="som_info.html">som_info</a> <TD> print out information on a given struct  
+<TR><TD>som_kmeanscolor <TD> color coding according to k-means clustering
+<TR><TD><a href="som_label.html">som_label</a> <TD> give labels to map units
+<TR><TD><a href="som_lininit.html">som_lininit</a> <TD> linear initialization algorithm
+<TR><TD><a href="som_make.html">som_make</a> <TD> create, initialize and train a SOM
+<TR><TD><a href="som_map_struct.html">som_map_struct</a> <TD> create & initialize a map struct 
+<TR><TD><a href="som_neighborhood.html">som_neighborhood</a> <TD> calculates neighborhood matrix for the given map
+<TR><TD><a href="som_norm_variable.html">som_norm_variable</a> <TD> (de)normalize one variable
+<TR><TD><a href="som_normalize.html">som_normalize</a> <TD> normalize data set
+<TR><TD>som_normcolor <TD> simulate indexed colormap
+<TR><TD><a href="som_pieplane.html">som_pieplane</a> <TD> pie chart visualization of map
+<TR><TD><a href="som_plotplane.html">som_plotplane</a> <TD> plot chart visualization of map
+<TR><TD>som_probability_gmm <TD> evaluate Gaussian mixture model
+<TR><TD>som_prototrain <TD> a simple version of sequential training: easy to modify
+<TR><TD><a href="som_quality.html">som_quality</a> <TD> quantization and topographic error of SOM
+<TR><TD><a href="som_randinit.html">som_randinit</a> <TD> random initialization algorithm
+<TR><TD><a href="som_read_cod.html">som_read_cod</a> <TD> reads a SOM_PAK format codebook file
+<TR><TD><a href="som_read_data.html">som_read_data</a> <TD> reads a (SOM_PAK format) ASCII data file
+<TR><TD><a href="som_recolorbar.html">som_recolorbar</a> <TD> refresh/reconfigure colorbars
+<TR><TD>som_select <TD> GUI for manual selection of map units
+<TR><TD><a href="som_seqtrain.html">som_seqtrain</a> <TD> sequential training algorithm
+<TR><TD><a href="som_set.html">som_set</a> <TD> create & set (& check) values to structs
+<TR><TD><a href="som_show.html">som_show</a> <TD> basic visualization
+<TR><TD><a href="som_show_add.html">som_show_add</a> <TD> add labels, hits and trajectories
+<TR><TD><a href="som_show_clear.html">som_show_clear</a> <TD> remove extra markers
+<TR><TD><a href="som_sompaktrain.html">som_sompaktrain</a> <TD> uses SOM_PAK to train a map
+<TR><TD>som_sub2ind <TD> from subscript index to linear index
+<TR><TD><a href="som_supervised.html">som_supervised</a> <TD> supervised SOM algorithm
+<TR><TD><a href="som_topol_struct.html">som_topol_struct</a> <TD> create & initialize a topology struct 
+<TR><TD><a href="som_train_struct.html">som_train_struct</a> <TD> create & initialize a train struct 
+<TR><TD>som_trajectory <TD> launches a GUI for presenting comet-trajectories 
+<TR><TD><a href="som_umat.html">som_umat</a> <TD> calculates the U-matrix
+<TR><TD><a href="som_unit_coords.html">som_unit_coords</a> <TD> calculates coordinates in output space for map units
+<TR><TD><a href="som_unit_dists.html">som_unit_dists</a> <TD> distances in output space between map units
+<TR><TD><a href="som_unit_neighs.html">som_unit_neighs</a> <TD> units in 1-neighborhood for each map unit
+<TR><TD><a href="som_vis_coords.html">som_vis_coords</a> <TD> map unit coordinates used in visualizations
+<TR><TD><a href="som_vs1to2.html">som_vs1to2</a> <TD> converts a version 1.0 struct to version 2.0 struct
+<TR><TD><a href="som_vs2to1.html">som_vs2to1</a> <TD> converts a version 2.0 struct to version 1.0 struct
+<TR><TD><a href="som_write_cod.html">som_write_cod</a> <TD> writes a SOM_PAK format data file
+<TR><TD><a href="som_write_data.html">som_write_data</a> <TD> writes a SOM_PAK format codebook file
+<TR><TD>sompak_gui <TD> GUI for using SOM_PAK from Matlab
+<TR><TD>sompak_init <TD> call SOM_PAK's initialization programs from Matlab
+<TR><TD>sompak_init_gui <TD> GUI for using SOM_PAK's initialization from Matlab
+<TR><TD>sompak_rb_control <TD> an auxiliary function for sompak_*_gui functions.
+<TR><TD>sompak_sammon <TD> call SOM_PAK's Sammon program from Matlab
+<TR><TD>sompak_sammon_gui <TD> GUI for using SOM_PAK's Sammon program from Matlab
+<TR><TD>sompak_train <TD> call SOM_PAK's training program from Matlab
+<TR><TD>sompak_train_gui <TD> GUI for using SOM_PAK's training program from Matlab 
+<TR><TD>somtoolbox <TD> this file
+<TR><TD>vis_PlaneAxisProperties <TD> set axis properties in visualization functions
+<TR><TD>vis_footnote <TD> adds a movable text to the current figure 
+<TR><TD>vis_footnoteButtonDownFcn <TD> callback function for vis_footnote.m
+<TR><TD><a href="vis_patch.html">vis_patch</a> <TD> defines hexagonal and rectangular patches
+<TR><TD>vis_planeGetArgs <TD> converts topol struct to lattice, msize argument pair
+<TR><TD>vis_som_show_data <TD> returns UserData and subplot handles stored by som_show.m
+<TR><TD>vis_trajgui <TD> the actual GUI started by som_trajectory.m 
+<TR><TD>vis_valuetype <TD> used for type checks 
+</TABLE>
+<p>
+<hr><br>
+<center>[ <a href="../../helpdesk.html" target="_top">Help Desk</a> | <a href="som.html">SOM Toolbox</a> ]</center>
+<br>
+<!-- Last updated: Jun 7 2000 -->
+</body>
+</html>
